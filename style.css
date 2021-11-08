@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+font-family: 'Red Hat Display', sans-serif;
+background-image: url(images/pattern-background-desktop.svg);
+background-position: top center;
+background-size:auto;
+background-repeat:repeat-x;
+background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+max-width: 450px;
+background-color: #fff;;
+margin: auto;
+margin-top: 100px;
+border-radius: 16px;
+text-align: center;
+margin-bottom: 60px;
+box-shadow: 0 20px 15px hsl(224, 50%, 85%);
+background-image: url(images/illustration-hero.svg);
+background-position: top center;
+background-repeat: no-repeat;
+padding: 45px;
+padding-top: 270px;
+}
+h1 {
+font-size: 29px;
+font-weight: 900;
+color: hsl(223, 47%, 23%);
+margin-bottom: 25px;
+}
+p {
+font-size: 16px;
+padding-left: 30px;
+padding-right: 30px;
+color: hsl(224, 23%, 55%);
+line-height: 28px;
+}
+.offer {
+    display: flex;
+    margin-top: 45px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 45px;
+}
+.offer-description {
+    flex: 1;
+    text-align: end;
+    height: 50px;
+    background-image: url(images/icon-music.svg);
+    background-repeat: no-repeat;
+    background-position-x: left;
+}
+.offer-change {
+flex: 1;
+text-align: end;
+line-height: 50px;;
+}
+h2 {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    line-height: 25px;
+    font-weight: 500;
+}
+.plan-name {
+color: hsl(223, 47%, 23%);
+font-weight: 900;
+}
+.offer-change a {
+color:  hsl(245, 75%, 52%);
+font-weight: 700;
+}
+.offer-change a:hover {
+    text-decoration: none;
+    color: hsl(245, 60%, 60%);
+}
+.proceed {
+    display: block;
+    padding: 15px;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 15px 15px hsl(224, 23%, 90%);
+}
+.proceed:hover {
+background-color: hsl(245, 60%, 60%);
+}
+.cancel {
+color: hsl(224, 23%, 55%);
+font-weight: 700;
+text-decoration: none;
+margin-top: 30px;
+display: inline-block;
+}
+.cancel:hover {
+color: hsl(223, 47%, 23%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+@media (max-width: 440px) {
+    .container {
+    max-width: 85%;
+    padding: 30px;
+    padding-top: 210px;
+    background-size: contain;
+    margin-top: 70px;
+    }
+    h1 {
+    font-size: 24px;
+    }
+    p {
+        padding: 5;
+    }
+    .offer {
+        margin-left: 5;
+        margin-right: 5;
+    }
+    .offer-change {
+        flex: 2;
+    }
+    .offer-description {
+        flex: 3;
+    }
+}
+
+@media (max-width: 410px) {
+    .container {
+        max-width: 85%;
+        padding: 20px;
+        padding-top: 210px;
+        background-size: contain;
+        margin-top: 70px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    p {
+        line-height: 22px;
+    }
+    .offer {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .offer-change {
+        flex: 2;
+    }
+    .offer-description {
+        flex: 3;
+    }
+    .cancel {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 321px) {
+    .container {
+        max-width: 85%;
+        padding: 20px;
+        padding-top: 210px;
+        background-size: contain;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    p {
+        line-height: 22px;
+    }
+    .offer {
+        margin-left: 5px;
+        margin-right: 5px;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .offer-description {
+        text-align: center;
+        width: 90%;
+        margin-left: 30px;
+    }
+    .offer-change {
+        text-align: center;
+    }
+    .cancel {
+        margin-bottom: 10px;
+    }
+    .attribution {
+        padding: 30px;
+    }
+}
